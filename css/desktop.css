@@ -1,0 +1,67 @@
+/* 64em is also 1028px when basefont is 16px*/
+@media only screen and (min-width: 64rem) {
+    /* HEADER */
+    header {
+        margin: 1rem;
+    }  
+    #logo {
+        border: 15px solid #efd3d7;
+    }
+    /* NAVIGATION */
+    nav ul#primaryNav {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+    nav button {
+        display: none;
+    }
+    nav ul li a {
+        border: none;
+        font-size: 1rem;
+    }
+    /* FOOTER */
+    footer {
+        margin: 1rem;
+    }
+    /* FONTS */
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .news {
+        font-size: 1.5rem;
+    }
+    /* MAIN PAGE */
+    .newsContent {
+        display: grid;
+        grid-template-columns:  repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .subHeader {
+        padding: 2rem;
+    }
+    .newsContent h2, .newsContent h2 {
+        font-size: 4rem;
+    }
+    /* CONTACT PAGE */
+    .contactMain {
+        grid-template-columns:1fr 1fr;
+    }
+    /* GOOGLE MAP */
+    iframe {
+        width: 500px;
+        height: 500px;
+    }
+    /* BOOK HERE */
+    .bookContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    th {
+        font-size: 1.25rem;
+    }
+}

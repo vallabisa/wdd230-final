@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Domine&family=Frank+Ruhl+Libre:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <script defer src="js/script.js"></script>
+    <title>hotel</title>
+  </head>
+
+  <body>
+    <!-- HEADER AREA-->
+    <header>
+      <picture>
+        <source srcset="images/logo_desktop.png" media="(min-width: 1024px)" />
+        <source srcset="images/logo_tablet.png" media="(min-width: 721px)" />
+        <img id="logo" src="images/logo_small.png" alt="logo" />
+      </picture>
+      <section class="heading">
+        <h2>BOUNTIFUL FOODS</h2>
+        
+      </section>
+      <nav>
+        <button id="navButton"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+          <li><a id="active" href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="contactMain">
+
+      <div class="contactContent">
+        <h2>Place you order now!</h2>
+        <form action="thankYou.html" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top"
+              >First name* <input type="text" name="fname" required
+            /></label>
+
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Phone Number*
+              <input
+                type="number"
+                name="phone"
+                placeholder="09150000000"
+                required
+            /></label>
+
+            <label class="top">Choose a fruit:*</label>
+            <select id="fruit" name="fruitlist" form="fruitform" required/>
+              <option>Apple</option>
+              <option>Avocado</option>
+              <option>Banana</option>
+              <option>Blueberry</option>
+              
+            </select>
+
+            <label class="top"
+              >Special Instruction
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="10"
+                placeholder="Please Type Here!"
+              ></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Place my order" class="submitBtn" />
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER AREA -->
+    <footer>
+      <div class="botTitle">
+        <h2 id="botTitle">BOUNTIFUL FOODS </h2>
+        <p id="contact">
+          Carlsbad, California | Contact Nos. Tel: 1234-5678
+        </p>
+      </div>
+      <div class="botInfo">
+        <p id="copyright">
+          &copy; 2022 &#9925;| Val Labisa &#9925;| WDD230 
+        </p>
+        <p id="lastmod"></p>
+      </div>
+    </footer>
+  </body>
+</html>
